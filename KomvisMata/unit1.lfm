@@ -1,0 +1,246 @@
+object Form1: TForm1
+  Left = 74
+  Height = 664
+  Top = 381
+  Width = 967
+  Caption = 'Form1'
+  ClientHeight = 664
+  ClientWidth = 967
+  LCLVersion = '2.2.4.0'
+  object ImageOriginal: TImage
+    Left = 13
+    Height = 224
+    Top = 46
+    Width = 224
+    Center = True
+  end
+  object ImageKonturBijiMata: TImage
+    Left = 248
+    Height = 224
+    Top = 46
+    Width = 224
+    Center = True
+  end
+  object ImagePupil: TImage
+    Left = 480
+    Height = 224
+    Top = 46
+    Width = 224
+    Center = True
+  end
+  object ImageKonturPupil: TImage
+    Left = 720
+    Height = 224
+    Top = 46
+    Width = 224
+    Center = True
+  end
+  object ImageMaskBijiMata: TImage
+    Left = 13
+    Height = 224
+    Top = 344
+    Width = 224
+    Center = True
+  end
+  object ImageMaskPupil: TImage
+    Left = 248
+    Height = 224
+    Top = 344
+    Width = 224
+    Center = True
+  end
+  object ImageMaskIrisMata: TImage
+    Left = 480
+    Height = 224
+    Top = 344
+    Width = 224
+    Center = True
+  end
+  object ImageHasilMaskIrisMata: TImage
+    Left = 720
+    Height = 224
+    Top = 344
+    Width = 224
+    Center = True
+  end
+  object BijiMata: TLabel
+    Left = 56
+    Height = 25
+    Top = 8
+    Width = 67
+    Caption = 'Biji Mata'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object KonturBijiMata: TLabel
+    Left = 272
+    Height = 25
+    Top = 8
+    Width = 125
+    Caption = 'Kontur Biji Mata'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Pupil: TLabel
+    Left = 544
+    Height = 25
+    Top = 8
+    Width = 39
+    Caption = 'Pupil'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object KonturPupil: TLabel
+    Left = 760
+    Height = 25
+    Top = 8
+    Width = 97
+    Caption = 'Kontur Pupil'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object MaskBijiMata: TLabel
+    Left = 40
+    Height = 25
+    Top = 304
+    Width = 114
+    Caption = 'Mask Biji Mata'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object TeksturIris: TLabel
+    Left = 280
+    Height = 25
+    Top = 304
+    Width = 86
+    Caption = 'Mask Pupil'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ButtonLoad: TButton
+    Left = 64
+    Height = 30
+    Top = 272
+    Width = 104
+    Caption = 'Load'
+    OnClick = ButtonLoadClick
+    TabOrder = 0
+  end
+  object ButtonProcessKonturBijiMata: TButton
+    Left = 304
+    Height = 30
+    Top = 272
+    Width = 104
+    Caption = 'Process'
+    OnClick = ButtonProcessKonturBijiMataClick
+    TabOrder = 1
+  end
+  object ButtonProcessPupil: TButton
+    Left = 536
+    Height = 30
+    Top = 272
+    Width = 104
+    Caption = 'Process'
+    OnClick = ButtonProcessPupilClick
+    TabOrder = 2
+  end
+  object ButtonProcessKonturPupil: TButton
+    Left = 776
+    Height = 30
+    Top = 272
+    Width = 104
+    Caption = 'Process'
+    OnClick = ButtonProcessKonturPupilClick
+    TabOrder = 3
+  end
+  object ButtonProcessMaskPupil: TButton
+    Left = 304
+    Height = 30
+    Top = 576
+    Width = 104
+    Caption = 'Process'
+    OnClick = ButtonProcessMaskPupilClick
+    TabOrder = 5
+  end
+  object ButtonProcessMaskIris: TButton
+    Left = 56
+    Height = 30
+    Top = 576
+    Width = 104
+    Caption = 'Process'
+    OnClick = ButtonProcessMaskIrisClick
+    TabOrder = 4
+  end
+  object TeksturIrisMata: TLabel
+    Left = 512
+    Height = 25
+    Top = 304
+    Width = 128
+    Caption = 'Tekstur Iris Mata'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ButtonProcessTekturIrisMata: TButton
+    Left = 528
+    Height = 30
+    Top = 576
+    Width = 104
+    Caption = 'Process'
+    OnClick = ButtonProcessTekturIrisMataClick
+    TabOrder = 6
+  end
+  object HasilTeksturIrisMata: TLabel
+    Left = 729
+    Height = 25
+    Top = 304
+    Width = 171
+    Caption = 'Hasil Tekstur Iris Mata'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ButtonProcessHasilTekturIrisMata: TButton
+    Left = 784
+    Height = 30
+    Top = 576
+    Width = 104
+    Caption = 'Process'
+    OnClick = ButtonProcessHasilTekturIrisMataClick
+    TabOrder = 7
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 256
+    Top = 358
+  end
+end
